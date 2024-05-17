@@ -10,7 +10,8 @@ Rails.application.routes.draw do
   post "/dogs", controller: "dogs", action: "create"
   get "/dogs", controller: "dogs", action: "index"
   get "/dogs/:id", controller: "dogs", action: "show"
-
+  patch "/dogs/:id", controller: "dogs", action: "update"
+  delete "/dogs/:id", controller: "dogs", action: "destroy"
 
 
 end
